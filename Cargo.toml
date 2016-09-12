@@ -1,0 +1,18 @@
+[package]
+name = "test-api"
+version = "0.1.0"
+authors = ["Nikolay Denev <ndenev@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+serde_codegen = "*"
+
+[dependencies]
+nickel = "*"
+serde = "*"
+serde_json = "*"
+rand = "0.3"
+uuid = { version = "0.2", features = ["serde", "v4"] }
+log = "*"
+env_logger = "*"
+time = "0.1"
